@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <div className="flex flex-col w-full h-full ">
     <Navbar/>
-    <div className="container mb-3 mx-auto pt-4 px-4Add">
+    <div className="container mb-3 mx-auto pt-4 px-4">
       <Suspense fallback={<StatsCards loading={true} />}>
         <CardStatsWrapper />
       </Suspense>
