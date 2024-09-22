@@ -35,10 +35,10 @@ function DesignerComponent({}: {}) {
   );
 }
 
-function FormComponent({}: {}) {
+function FormComponent() {
   return <Separator />;
 }
 
-function PropertiesForm({}: {}) {
+function PropertiesForm() {
   return <p>No Propeties For This Element</p>;
 }
