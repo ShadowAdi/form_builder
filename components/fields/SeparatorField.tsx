@@ -2,7 +2,6 @@
 import {
   ElementsType,
   FormElement,
-  FormElementInstance,
 } from "../others/FormElements";
 import { Label } from "../ui/label";
 
@@ -26,7 +25,7 @@ export const SeparatorFieldFormElement: FormElement = {
   validate: () => true,
 };
 
-function DesignerComponent({}: {}) {
+function DesignerComponent() {
   return (
     <div className="flex gap-2 w-full flex-col ">
       <Label className="text-muted-foreground">Separator Field</Label>
