@@ -25,7 +25,6 @@ import {
 import { Switch } from "../ui/switch";
 import { cn } from "@/lib/utils";
 import { Textarea } from "../ui/textarea";
-import { Slider } from "../ui/slider";
 import { Checkbox } from "../ui/checkbox";
 
 const type: ElementsType = "CheckboxField";
@@ -116,7 +115,7 @@ function FormComponent({
   defaultValue?: string;
 }) {
   const element = elementInstance as CustomInstance;
-  const { label, helperText, required, rows } = element.extraAttributes;
+  const { label, helperText, required } = element.extraAttributes;
   const [value, setValue] = useState<boolean>(
     defaultValue === "true" ? true : false
   );

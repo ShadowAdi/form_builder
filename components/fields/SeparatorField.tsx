@@ -26,11 +26,7 @@ export const SeparatorFieldFormElement: FormElement = {
   validate: () => true,
 };
 
-function DesignerComponent({
-  elementInstance,
-}: {
-  elementInstance: FormElementInstance;
-}) {
+function DesignerComponent({}: {}) {
   return (
     <div className="flex gap-2 w-full flex-col ">
       <Label className="text-muted-foreground">Separator Field</Label>
@@ -39,18 +35,10 @@ function DesignerComponent({
   );
 }
 
-function FormComponent({
-  elementInstance,
-}: {
-  elementInstance: FormElementInstance;
-}) {
+function FormComponent({}: {}) {
   return <Separator />;
 }
 
-function PropertiesForm({
-  elementInstance,
-}: {
-  elementInstance: FormElementInstance;
-}) {
+function PropertiesForm({}: {}) {
   return <p>No Propeties For This Element</p>;
 }

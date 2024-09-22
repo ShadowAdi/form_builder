@@ -1,17 +1,15 @@
 "use client";
-import { MdTextFields } from "react-icons/md";
 import {
   ElementsType,
   FormElement,
   FormElementInstance,
-  SubmitFunc,
 } from "../others/FormElements";
 import { Label } from "../ui/label";
 import { Input } from "../ui/input";
 import { z } from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import useDesigner from "../hooks/useDesigner";
 import {
   Form,
@@ -22,8 +20,6 @@ import {
   FormLabel,
   FormMessage,
 } from "../ui/form";
-import { Switch } from "../ui/switch";
-import { cn } from "@/lib/utils";
 import { LuHeading2 } from "react-icons/lu";
 
 const type: ElementsType = "SubTitleField";

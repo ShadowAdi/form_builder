@@ -13,7 +13,7 @@ import { Form } from "@prisma/client";
 
 
 const BuilderPage = ({ form }:{form:Form}) => {
-    const { visits, submissions, shareUrl, name, id } = form;
+    const { visits, submissions } = form;
   
     let submissionRate = 0;
     if (visits > 0) {

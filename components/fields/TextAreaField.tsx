@@ -1,5 +1,4 @@
 "use client";
-import { MdTextFields } from "react-icons/md";
 import {
   ElementsType,
   FormElement,
@@ -82,8 +81,7 @@ function DesignerComponent({
   elementInstance: FormElementInstance;
 }) {
   const element = elementInstance as CustomInstance;
-  const { label, helperText, required, rows } = element.extraAttributes;
-  console.log(element.extraAttributes);
+  const { label, helperText, required } = element.extraAttributes;
   return (
     <div className="flex gap-2 w-full flex-col ">
       <Label>
