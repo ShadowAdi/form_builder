@@ -2,6 +2,7 @@
 import { GetFormStats } from "@/actions/Form";
 import CreateForm from "@/components/others/CreateForm";
 import FormCards, { FormCardSkeleton } from "@/components/others/FormCards";
+import Navbar from "@/components/others/Navbar";
 import StatsCards from "@/components/others/StatsCards";
 import { Separator } from "@radix-ui/react-dropdown-menu";
 import React, { Suspense, useEffect, useState } from "react";
@@ -16,6 +17,8 @@ export default function Home() {
     return null
   }
   return (
+    <div className="flex flex-col w-full h-full">
+    <Navbar/>
     <div className="container mb-3 mx-auto pt-4">
       <Suspense fallback={<StatsCards loading={true} />}>
         <CardStatsWrapper />
@@ -33,6 +36,7 @@ export default function Home() {
           <FormCards/>
         </Suspense>
       </div>
+    </div>
     </div>
   );
 }

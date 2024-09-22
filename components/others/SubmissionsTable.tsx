@@ -60,7 +60,7 @@ const SubmissionsTable = async ({ id }: { id: number }) => {
     }
   });
   return (
-    <div className="w-full py-2 flex felx-col">
+    <div className="w-full py-2 flex flex-col">
       <h1 className="text-2xl font-bold my-4">Submissions</h1>
       <div className="rounded-md border">
         <Table>

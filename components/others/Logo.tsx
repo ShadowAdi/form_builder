@@ -1,10 +1,12 @@
 'use client'
 import { useTheme } from "next-themes";
+import Link from "next/link";
 import React from "react";
 
 const Logo = () => {
   const {theme}=useTheme()
   return (
+    <Link href={"/"}>
     <svg
       id="logo-85"
       width="40"
@@ -21,6 +23,7 @@ const Logo = () => {
         fill={theme==="dark"?"#fff":"#87CEEB"}
         ></path>
     </svg>
+    </Link>
   );
 };
 

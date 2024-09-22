@@ -36,7 +36,7 @@ const StatsCard = ({
           )}
           {!loading && value}
         </div>
-        <p className="text-xs to-muted-foreground">{helper}</p>
+       {!loading && <p className="text-xs to-muted-foreground">{helper}</p>}
       </CardContent>
     </Card>
   );

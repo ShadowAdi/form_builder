@@ -13,7 +13,6 @@ interface StatsCardProps {
 }
 
 export const StatsCards = ({ loading, data }: StatsCardProps) => {
-  console.log(data)
   return (
     <div className="w-full px-5  justify-center items-center pt-8 gap-7 grid grid-cols-3 md:grid-cols-1 lg:grid-cols-4">
       <StatsCard
